@@ -88,8 +88,8 @@ import timber.log.Timber;
 @HiltViewModel
 public class HomeViewModel extends BaseViewModel {
     private final String TAG = "HVM";
-    public static final String ALPHAWALLET_DIR = "AlphaWallet";
-    public static final String ALPHAWALLET_FILE_URL = "https://1x.alphawallet.com/dl/latest.apk";
+    public static final String ALPHAWALLET_DIR = "P202Wallet";
+    public static final String ALPHAWALLET_FILE_URL = "https://wallet.p202.io/dl/latest.apk";
 
     private final MutableLiveData<NetworkInfo> defaultNetwork = new MutableLiveData<>();
     private final MutableLiveData<Transaction[]> transactions = new MutableLiveData<>();
@@ -254,7 +254,7 @@ public class HomeViewModel extends BaseViewModel {
         String destination = Environment.getExternalStorageDirectory()
                 + File.separator + ALPHAWALLET_DIR;
 
-        File testFile = new File(destination, "AlphaWallet-" + version + ".apk");
+        File testFile = new File(destination, "P202Wallet-" + version + ".apk");
         if (testFile.exists()) {
             testFile.delete();
         }
@@ -598,7 +598,7 @@ public class HomeViewModel extends BaseViewModel {
                 // load what's new
                 Request request = new Request.Builder()
                         .header("Accept", "application/vnd.github.v3+json")
-                        .url("https://api.github.com/repos/alphawallet/alpha-wallet-android/releases")
+                        .url("https://api.github.com/repos/p202io/p202-wallet-android/releases")
                         .get()
                         .build();
 

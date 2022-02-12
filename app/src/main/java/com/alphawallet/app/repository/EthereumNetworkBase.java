@@ -74,9 +74,9 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
 {
     public static final String COVALENT = "[COVALENT]";
 
-    private static final String DEFAULT_HOMEPAGE = "https://alphawallet.com/browser/";
+    private static final String DEFAULT_HOMEPAGE = "https://wallet.p202.io/browser/";
 
-    private static final String POLYGON_HOMEPAGE = "https://alphawallet.com/browser-item-category/polygon/";
+    private static final String POLYGON_HOMEPAGE = "https://wallet.p202.io/browser/";
 
     private static final String GAS_API = "module=gastracker&action=gasoracle";
     /* constructing URLs from BuildConfig. In the below area you will see hardcoded key like da3717...

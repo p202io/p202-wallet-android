@@ -43,8 +43,8 @@ import timber.log.Timber;
 
 public class Web3View extends WebView {
     private static final String JS_PROTOCOL_CANCELLED = "cancelled";
-    private static final String JS_PROTOCOL_ON_SUCCESSFUL = "AlphaWallet.executeCallback(%1$s, null, \"%2$s\")";
-    private static final String JS_PROTOCOL_ON_FAILURE = "AlphaWallet.executeCallback(%1$s, \"%2$s\", null)";
+    private static final String JS_PROTOCOL_ON_SUCCESSFUL = "P202Wallet.executeCallback(%1$s, null, \"%2$s\")";
+    private static final String JS_PROTOCOL_ON_FAILURE = "P202Wallet.executeCallback(%1$s, \"%2$s\", null)";
 
     @Nullable
     private OnSignTransactionListener onSignTransactionListener;
@@ -130,7 +130,7 @@ public class Web3View extends WebView {
         getSettings().setDomStorageEnabled(true);
         getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         getSettings().setUserAgentString(getSettings().getUserAgentString()
-                                               + "AlphaWallet(Platform=Android&AppVersion=" + BuildConfig.VERSION_NAME + ")");
+                                               + "P202 Wallet(Platform=Android&AppVersion=" + BuildConfig.VERSION_NAME + ")");
         WebView.setWebContentsDebuggingEnabled(true); //so devs can debug their scripts/pages
         addJavascriptInterface(new SignCallbackJSInterface(
                 this,

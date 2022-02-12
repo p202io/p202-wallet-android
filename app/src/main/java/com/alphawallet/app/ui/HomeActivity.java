@@ -135,7 +135,7 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
     public static final int DAPP_TRANSACTION_SEND_REQUEST = 2;
     public static final String STORED_PAGE = "currentPage";
     public static final String RESET_TOKEN_SERVICE = "HOME_reset_ts";
-    public static final String AW_MAGICLINK = "aw.app/";
+    public static final String AW_MAGICLINK = "p202w.app/";
     public static final String AW_MAGICLINK_DIRECT = "openurl?url=";
 
     public HomeActivity()
@@ -147,7 +147,7 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
     @OnLifecycleEvent(Lifecycle.Event.ON_START)
     private void onMoveToForeground()
     {
-        Timber.tag("LIFE").d("AlphaWallet into foreground");
+        Timber.tag("LIFE").d("P202 Wallet into foreground");
         if (viewModel != null) viewModel.checkTransactionEngine();
         isForeground = true;
     }
@@ -155,7 +155,7 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
     @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
     private void onMoveToBackground()
     {
-        Timber.tag("LIFE").d("AlphaWallet into background");
+        Timber.tag("LIFE").d("P202 Wallet into background");
         if (viewModel != null && !tokenClicked) viewModel.stopTransactionUpdate();
         if (viewModel != null) viewModel.outOfFocus();
         isForeground = false;
@@ -277,7 +277,7 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
         else
         {
             //TODO: Check we are using latest version on github, since we're using a downloaded/manually installed version
-            //First check that this the package name is "io.stormbird.wallet" - it could be a fork
+            //First check that this the package name is "io.p202.wallet.app" - it could be a fork
         }
 
         setupFragmentListeners();
@@ -655,7 +655,7 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
                 AWalletConfirmationDialog cDialog = new AWalletConfirmationDialog(this);
                 cDialog.setTitle(R.string.alphawallet_update);
                 cDialog.setCancelable(true);
-                cDialog.setSmallText("Using an old version of Alphawallet. Please update from the Play Store or Alphawallet website.");
+                cDialog.setSmallText("Using an old version of P202 Wallet. Please update from the Play Store or P202 Wallet website.");
                 cDialog.setPrimaryButtonText(R.string.ok);
                 cDialog.setPrimaryButtonListener(v -> {
                     cDialog.dismiss();

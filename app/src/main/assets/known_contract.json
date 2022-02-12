@@ -1,4 +1,8 @@
 {
+"BSC":
+  [
+    {"address": "0x61a960C3F213B80EaC761e2f996414AB52C08985", "name": "P202", "isPopular": true, "network": 56}
+  ],
 "MainNet":
   [
     {"address": "0x056fd409e1d7a124bd7017459dfea2f387b6d5cd", "isPopular": true, "network": 1},

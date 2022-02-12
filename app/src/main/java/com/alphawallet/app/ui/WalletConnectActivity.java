@@ -552,7 +552,7 @@ public class WalletConnectActivity extends BaseActivity implements ActionSheetCa
     private void initWalletConnectPeerMeta()
     {
         String name = getString(R.string.app_name);
-        String url = "https://www.alphawallet.com";
+        String url = "https://wallet.p202.io";
         String description = viewModel.getWallet().address;
         String[] icons = {C.ALPHAWALLET_LOGO_URI};
 

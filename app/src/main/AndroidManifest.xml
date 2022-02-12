@@ -53,51 +53,51 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="aw.app"
+                    android:host="p202w.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="classic.aw.app"
+                    android:host="classic.p202w.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="kovan.aw.app"
+                    android:host="kovan.p202w.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="ropsten.aw.app"
+                    android:host="ropsten.p202w.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="rinkeby.aw.app"
+                    android:host="rinkeby.p202w.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="poa.aw.app"
+                    android:host="poa.p202w.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="sokol.aw.app"
+                    android:host="sokol.p202w.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="xdai.aw.app"
+                    android:host="xdai.p202w.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="app.awallet.io"
+                    android:host="wallet.p202.io"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="goerli.aw.app"
+                    android:host="goerli.p202w.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="artissigma1.aw.app"
+                    android:host="artissigma1.p202w.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="artistau1.aw.app"
+                    android:host="artistau1.p202w.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
             </intent-filter>
