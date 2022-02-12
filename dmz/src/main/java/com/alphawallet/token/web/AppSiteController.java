@@ -79,7 +79,7 @@ public class AppSiteController implements AttributeInterface
             "    \"apps\": [],\n" +
             "    \"details\": [\n" +
             "      {\n" +
-            "        \"appID\": \"LRAW5PL536.com.stormbird.alphawallet\",\n" +
+            "        \"appID\": \"S2KWW5PZUZ.io.p202.wallet.app\",\n" +
             "        \"paths\": [ \"*\" ]\n" +
             "      }\n" +
             "    ]\n" +
@@ -534,7 +534,7 @@ public class AppSiteController implements AttributeInterface
     2) for a test file which has valid certificates:
 
     $ curl -F 'file=@lib/src/test/ts/DAI.tsml' localhost:8080/api/v1/verifyXMLDSig
-    {"result":"pass","subject":"CN=*.aw.app","keyName":"","keyType":"SHA256withRSA","issuer":"CN=Let's Encrypt Authority X3,O=Let's Encrypt,C=US"}
+    {"result":"pass","subject":"CN=*.p202w.app","keyName":"","keyType":"SHA256withRSA","issuer":"CN=Let's Encrypt Authority X3,O=Let's Encrypt,C=US"}
 
     Client be-aware! Please handle return code 404 gracefully. It's content look like this:
 
