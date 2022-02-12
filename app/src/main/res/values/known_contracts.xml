@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="BSC" network="56">
+        <item>0x61a960C3F213B80EaC761e2f996414AB52C08985</item>
+    </string-array>
     <string-array name="MainNet" network="1">
         <item>0x056fd409e1d7a124bd7017459dfea2f387b6d5cd</item>
         <item>0x8e870d67f660d95d5be530380d0ec0bd388289e1</item>

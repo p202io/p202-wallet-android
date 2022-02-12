@@ -16,11 +16,13 @@ import java.util.List;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 import static com.alphawallet.ethereum.EthereumNetworkBase.MAINNET_ID;
+import static com.alphawallet.ethereum.EthereumNetworkBase.BINANCE_MAIN_ID;
+import static com.alphawallet.ethereum.EthereumNetworkBase.MATIC_ID;
 
 public class CustomViewSettings
 {
-    public static final long primaryChain = MAINNET_ID;
-    private static final String primaryChainName = C.ETHEREUM_NETWORK_NAME;
+    public static final long primaryChain = BINANCE_MAIN_ID;
+    private static final String primaryChainName = C.BINANCE_MAIN_NETWORK;
 
     //You can use the settings in this file to customise the wallet appearance
 
@@ -32,6 +34,7 @@ public class CustomViewSettings
     //See also lockedChains. You can also lock the chains that are displayed on.
     //If you leave the locked chains empty, the token will appear if the chain is selected
     private static final List<TokenInfo> lockedTokens = Arrays.asList(
+            new TokenInfo("0x61a960C3F213B80EaC761e2f996414AB52C08985", "Project 202", "P202", 18, true, EthereumNetworkBase.BINANCE_MAIN_ID)
             // new TokenInfo(String TokenAddress, String TokenName, String TokenSymbol, int TokenDecimals, boolean isEnabled, long ChainId)
             //new TokenInfo("0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48", "USD Coin", "USDC", 6, true, EthereumNetworkBase.MAINNET_ID),
             //new TokenInfo("0x6C8c6b02E7b2BE14d4fA6022Dfd6d75921D90E4E", "Compound BAT", "CBAT", 8, true, EthereumNetworkBase.MAINNET_ID)
@@ -48,7 +51,9 @@ public class CustomViewSettings
     );
 
     public static final List<Long> alwaysVisibleChains = Arrays.asList(
-            EthereumNetworkBase.MAINNET_ID
+            EthereumNetworkBase.MAINNET_ID,
+            EthereumNetworkBase.BINANCE_MAIN_ID,
+            EthereumNetworkBase.MATIC_ID
     );
 
     public static boolean alwaysShow(long chainId)
